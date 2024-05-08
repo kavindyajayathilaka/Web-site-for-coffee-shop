@@ -1,0 +1,259 @@
+/*home page*/
+.header {
+    background-color:darkslategrey;
+    padding: 18px 0;
+  }
+  
+  .container {
+    display:flex;
+    justify-content: space-between;  
+    max-width: 1000px;   
+  }
+
+  .navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navigation li a {
+    text-decoration: none;
+    color: rgb(248, 243, 243);
+    font-weight: bold;
+  }
+  
+  .navigation li a:hover {
+    color: #61ac63; /* Change link color on hover */
+  }
+
+  .navigation a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;    
+  }
+  
+
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;    
+  }
+  
+  .hero img {
+    opacity: 2.5; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the image behind the content */
+  }
+  
+  .hero-content h1{
+    text-align: center;
+    color: white;
+    z-index: 1; /* Place the content on top of the image */
+    font-size: 4em;
+    margin-top: 0;
+  }
+  
+  .hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content p {
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    color:white;
+    font-weight: 400;
+  }
+  
+  
+  /*about us page*/
+  
+.about-us {
+    padding: 50px 0; 
+    margin:  auto; 
+    background-image: url("image/coffee3.jpg");  
+  }
+  
+  .about-us-content {
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto; 
+    background-color:rgb(165, 116, 10); 
+    border-radius: 5px;
+  }
+
+  .about-us-content h2{
+    margin-left: 2%;
+    font-size: 2em;  
+  }
+
+  .about-us-content pre{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    padding:  5px;
+    background-color:darkslategrey;    
+  }
+
+
+
+/*menu page*/
+ 
+.menu {
+  padding: 15px 0;
+  background-image: url("image/coffe4.jpg");
+}
+
+.menu-categories h2{
+  text-align: center;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 3%;
+  font-size: 3em;
+}
+
+.menu-categories h3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #5c4605;
+  font-size: 2em;
+  font-style: italic;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+.menu-categories{
+  max-width: 800px; 
+  margin: 0 auto;
+  background-color:tan;
+  border-radius: 5px;
+}
+
+.menu-categories ul {
+  list-style: none;
+  margin-top: 2%;
+  padding: 0;
+  font-size: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.menu-categories li {
+  margin-bottom: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.menu-categories li img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  margin-right: 10px;
+  margin-left: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/*animatin for photos*/
+.menu-categories li:hover img {
+  transform: scale(1.1); /* Scale image up on hover */
+}
+
+.menu-categories li p{
+  font-size: medium;
+} 
+
+
+/*contcat page*/
+.contact {
+  padding: 25px 0;
+  background-color: rgb(95, 161, 121);  
+}
+
+.contact h2{
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.contact p{
+  text-align: center;
+  font-size: 20px;
+  color: #03361a;
+}
+
+.contact-info{
+  max-width: 800px;
+  margin-left: 20%; 
+  margin-right: 20%; 
+}
+
+.contact-info table {
+  width: 100%;
+  border-collapse: collapse;  
+}
+
+.contact-info th,
+.contact-info td {
+  padding: 10px;
+  border: 3px solid #131212; 
+}
+
+.contact-info th {
+  text-align: left; 
+  font-weight: bold;
+}
+
+.contact-form {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 18%;  
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 3px solid #131212;
+  border-radius: 4px; 
+}
+
+.contact-form button {
+  background-color: #03361a;
+  color: rgb(229, 238, 229);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+.contact-form button:hover {
+  background-color: #222; /* Change button color on hover */
+}
